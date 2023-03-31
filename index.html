@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather API</title>
-</head>
-<body>
     <head>
-        <h1>Weather Data</h1>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Weather API</title>
     </head>
-    <main>
-        <section id="currentWeather">
-            <h3>Enter A City</h3>
-            <form action="">
-                <label for="city"></label>
-                <input type="text" name="" id="nameText">
-                <input type="submit" value="Enter" id="name">
-            </form>
-            <h4 id="cityName"></h4>
-            <div id="temps">
-                <p>current temp</p>
-                <p id="currentTempFa"></p>
-                <p id="currentTempCe"></p>
-            </div>
-            <div id="sun">
-                <p>sunrise and sunset</p>
-                <p id="sunrise"></p>
-                <p id="sunset"></p>
-            </div>
-        </section>
-    </main>
-    <script src="script.js" type="module"></script>
-</body>
+    <body>
+        <head>
+            <h1>Weather Data</h1>
+        </head>
+        <main>
+            <section id="weatherResults">
+                <section id="currentWeather">
+                    <h3>Enter A City</h3>
+                    <form action="">
+                        <label for="city"></label>
+                        <input type="text" name="" id="nameText" />
+                        <input type="submit" value="Enter" id="name" />
+                    </form>
+                    <h4 id="cityName"></h4>
+                    <div id="temps">
+                        <p>current temp</p>
+                        <p id="currentTempFa"></p>
+                        <p id="currentTempCe"></p>
+                    </div>
+                    <div id="sun">
+                        <p>sunrise and sunset</p>
+                        <p id="sunrise"></p>
+                        <p id="sunset"></p>
+                    </div>
+                </section>
+            </section>
+            <section id="history">
+                <h1>History</h1>
+            </section>
+        </main>
+        <script src="script.js" type="module"></script>
+    </body>
 </html>

@@ -7,7 +7,7 @@ let sunset = document.querySelector('#sunset')
 
 let input = document.querySelector('#nameText')
 let form = document.querySelector('form')
-
+localStorage.setItem('history',[])
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     let city = input.value;
@@ -24,4 +24,6 @@ form.addEventListener('submit', (event) => {
             sunrise.innerText = data.astronomy.astro.sunrise + ' sunrise'
             sunset.innerText = data.astronomy.astro.sunset + ' sunset'
         })
+    let history = localStorage.getItem('history')
+    localStorage.setItem('history', [history,city])
 })
